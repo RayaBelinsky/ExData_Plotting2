@@ -16,7 +16,7 @@ dim(SCC) # 11717   15
 # Subset data and append two years in one data frame
 MD <- subset(NEI, fips=='24510')
 
-# Generate the graph in the same directory as the source code
+# Generate the graph
 png(filename="plot2.png", width=480, height=480)
 
 barplot(tapply(X=MD$Emissions, INDEX=MD$year, FUN=sum), 
